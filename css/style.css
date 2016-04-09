@@ -12,7 +12,7 @@ header li{display: block; list-style-type: none; margin: 5px 0; text-align: cent
 header li a{background-color: #222222; color: #ccc; text-decoration: none; padding: 3px 5px; cursor: pointer; font-size: 16px; border: solid 2px #222222;}
 header li a:hover{text-decoration: none; color: #EEE;}
 header li .activo{border: solid 2px #EEFF41; color: #EEFF41 !important;}
-section {overflow: hidden;}
+section {overflow: hidden; padding-top: 90px;}
 
 @media (min-width:768px){
     header li{display: inline-block; list-style-type: none; margin: 5px 0; text-align: center;}
