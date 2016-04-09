@@ -41,16 +41,24 @@ section {overflow: hidden;}
 
 #section3{background-color: #CDDC39;}
 
-#section4{background-color: #333333;}
-#section4 h3{color: white;}
-#section4 form{display: block; margin: 0 auto; max-width: 300px;}
-#section4 form input{width:100%; display: block; background-color: transparent; border:0; border-bottom: solid 2px #ccc; display: block; margin: 20px 0; color: white;}
-#section4 form textarea{width:100%; height: 100px;display: block; background-color: transparent; border:0; border-bottom: solid 2px #ccc; display: block; color: white; resize: vertical;}
-#section4 input[type="submit"]{background-color: #2196F3; border:none;}
-#section4 .social{display: block; margin: 40px auto;}
-#section4 .social>div{text-align: center;}
-#section4 .social>div>a>i{color: white; font-size: 60px; padding: 20px 0;}
-#section4 .row>h3>span{color: #B71C1C;}
+#section4 #SolarApp{background: #222222; opacity: 0.8;}
+#section4 .modal-header{border: none; text-align: center; color: white;}
+#section4 .SolarApp{background: transparent; border: none; box-shadow: none;}
+#section4 .iphone6{position:relative; display: block; margin: 0 auto; width: 250px; height: 530px; background-image: url("../img/iphone.png"); background-size: 100% auto;}
+#section4 .iphone6 iframe{position: absolute; top: 55px; left:10px; width: 230px; height: 398px;}
+#section4 #NikeFlash .modal-dialog{width: 1050px; height: 768px;}
+#section4 .NikeFlash iframe{width:1020px; height: 768px;}
+
+#section5{background-color: #333333;}
+#section5 h3{color: white;}
+#section5 form{display: block; margin: 0 auto; max-width: 300px;}
+#section5 form input{width:100%; display: block; background-color: transparent; border:0; border-bottom: solid 2px #ccc; display: block; margin: 20px 0; color: white;}
+#section5 form textarea{width:100%; height: 100px;display: block; background-color: transparent; border:0; border-bottom: solid 2px #ccc; display: block; color: white; resize: vertical;}
+#section5 input[type="submit"]{background-color: #2196F3; border:none;}
+#section5 .social{display: block; margin: 40px auto;}
+#section5 .social>div{text-align: center;}
+#section5 .social>div>a>i{color: white; font-size: 60px; padding: 20px 0;}
+#section5 .row>h3>span{color: #B71C1C;}
 
 
 @media screen and (max-width: 768px) {
