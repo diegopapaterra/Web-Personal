@@ -1,9 +1,14 @@
-body{margin:0; padding:0; position: relative; font-family: 'Lato', Helvetica, Arial; min-width: 250px;}
+body{margin:0; padding:0; position: relative; font-family: 'Open Sans', sans-serif; min-width: 250px;}
+/*font-family: 'Lustria', serif;*/
 h1, h2{margin: 0; padding: 0;}
 
-
-header{position:fixed; top: 20%; right: 2%; margin: auto; width: 120px; z-index: 1000; opacity: 0.8;}
-header li{display: block; list-style-type: none; margin: 5px 0; text-align: right;}
+/*Header*/
+header.large {height: 100px; background: rgb(120, 144, 156); }
+header.small {height: 60px; background: rgba(255, 255, 255, 0.5); }
+/* Transitions */
+header{transition: .7s all; -moz-transition: .7s all; -webkit-transition: .7s all; -o-transition: .7s all;}
+header{position:fixed; top: 0; right: 0; left:0; margin: auto; width: 100%; z-index: 1000;}
+header li{display: inline-block; list-style-type: none; margin: 5px 0; text-align: center;}
 header li a{background-color: #222222; color: #ccc; text-decoration: none; padding: 3px 5px; cursor: pointer; font-size: 16px;}
 header li a:hover{text-decoration: none; color: #EEE;}
 header li .activo{background-color: #EEFF41; color: #222 !important;}

@@ -12,7 +12,11 @@ function ajustarSeccion(){
     
     $("a").removeClass("activo");
     
-    if(scrollActual >= $("#section4").offset().top){
+    if(scrollActual >= $("#section5").offset().top){
+
+        $("#v5").addClass("activo");
+
+    }else if(scrollActual >= $("#section4").offset().top){
 
         $("#v4").addClass("activo");
 
@@ -35,17 +39,31 @@ function cambiarSeccion(){
 
     switch(secction){
         case "v1":
-            $("htm, body").animate({scrollTop:$("#section1").offset().top}, "slow"); 
+            $("html, body").animate({scrollTop:$("#section1").offset().top}, "slow");
         break;
         case "v2":
-            $("htm, body").animate({scrollTop:$("#section2").offset().top}, "slow"); 
+            $("html, body").animate({scrollTop:$("#section2").offset().top}, "slow");
         break;
         case "v3":
-            $("htm, body").animate({scrollTop:$("#section3").offset().top}, "slow"); 
+            $("html, body").animate({scrollTop:$("#section3").offset().top}, "slow");
         break;
         case "v4":
-            $("htm, body").animate({scrollTop:$("#section4").offset().top}, "slow"); 
+            $("html, body").animate({scrollTop:$("#section4").offset().top}, "slow");
         break;
+        case "v5":
+            $("html, body").animate({scrollTop:$("#section5").offset().top}, "slow");
+            break;
     }
     
 }
+
+/*Function Menu Resize*/
+$(document).on("scroll", function() {
+
+    if($(document).scrollTop()>20) {
+        $("header").removeClass("large").addClass("small");
+    } else {
+        $("header").removeClass("small").addClass("large");
+    }
+
+});
