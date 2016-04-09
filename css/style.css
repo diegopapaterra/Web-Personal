@@ -3,25 +3,31 @@ body{margin:0; padding:0; position: relative; font-family: 'Open Sans', sans-ser
 h1, h2{margin: 0; padding: 0;}
 
 /*Header*/
-header.large {height: 100px; background: rgb(120, 144, 156); }
-header.small {height: 60px; background: rgba(255, 255, 255, 0.5); }
-/* Transitions */
+header.large {height: 100px; background: rgb(120, 144, 156); padding: 30px 0;}
+header.small {height: 60px; background: rgba(255, 255, 255, 0.5); padding: 15px 0;}
 header{transition: .7s all; -moz-transition: .7s all; -webkit-transition: .7s all; -o-transition: .7s all;}
 header{position:fixed; top: 0; right: 0; left:0; margin: auto; width: 100%; z-index: 1000;}
-header li{display: inline-block; list-style-type: none; margin: 5px 0; text-align: center;}
-header li a{background-color: #222222; color: #ccc; text-decoration: none; padding: 3px 5px; cursor: pointer; font-size: 16px;}
+header .main-navbar{text-align: center;}
+header li{display: block; list-style-type: none; margin: 5px 0; text-align: center;}
+header li a{background-color: #222222; color: #ccc; text-decoration: none; padding: 3px 5px; cursor: pointer; font-size: 16px; border: solid 2px #222222;}
 header li a:hover{text-decoration: none; color: #EEE;}
-header li .activo{background-color: #EEFF41; color: #222 !important;}
+header li .activo{border: solid 2px #EEFF41; color: #EEFF41 !important;}
 section {overflow: hidden;}
+
+@media (min-width:768px){
+    header li{display: inline-block; list-style-type: none; margin: 5px 0; text-align: center;}
+    header li a{background-color: #222222; color: #ccc; text-decoration: none; padding: 3px 5px; cursor: pointer; font-size: 16px; border: solid 2px #222222;}
+    header li a:hover{text-decoration: none; color: #EEE;}
+    header li .activo{border: solid 2px #EEFF41; color: #EEFF41 !important;}
+}
 
 
 #section1{border-bottom: 1px solid #cccccc; background-color: #222222; background-image: url("../img/Background.jpg"); background-repeat: no-repeat; background-position-x: 50%; background-position-y: 50%; background-position: center center;}
 #section1>div{text-align: center;}
-#section1 h1{font-size: 70px; line-height: 1.4; color: #FFFFFF; padding-top: 20%;}
-#section1 h2{font-size: 60px; line-height: 1; color: #FFFFFF; width: 50%; display: block; margin: auto;}
-#section1 h2 i{color: #B71C1C}
-.cursive{font-family: 'Dancing Script', cursive; text-align: right; padding-left: 7%;}
-.code{font-family: 'Inconsolata' ; text-align: left;}
+#section1 h1{font-size: 70px; line-height: 1.4; color: #FFFFFF; padding-top: 20%; font-family: 'Open Sans', sans-serif; font-weight: 100;}
+#section1 h2{font-size: 60px; line-height: 1; color: #FFFFFF; width: 50%; display: block; margin: auto; font-family: 'Open Sans', sans-serif; font-weight: 100;}
+#section1 h2 span{font-family: 'Open Sans', sans-serif; font-weight: 100;}
+
 
 #section2{background-color: #2196F3; color: #1b1464;}
 #section2 h3, #section3 h3, #section4 h3{text-align: center; padding: 40px 0;}
@@ -50,7 +56,7 @@ section {overflow: hidden;}
 @media screen and (max-width: 768px) {
 	#section2 img{max-width: 150px; display: block; margin: auto;}
 	#section2 p{line-height: 2; padding-right: 0;}
-	//#section2 blockquote{margin-right: 80px;}
+	/*#section2 blockquote{margin-right: 80px;}*/
 }
 
 @media screen and (max-width: 480px) {
@@ -114,10 +120,6 @@ section {overflow: hidden;}
   -o-transform: rotateY( 180deg );
   transform: rotateY( 180deg );
 }
-.card.flipped:
-{ 
-}
-
 .card .front,
 .card .back {
   display: block;
@@ -156,7 +158,7 @@ section {overflow: hidden;}
 
 /*Colors for front and back applied here*/
 .cardContainer:first-child .card .front {
-  background-image: url(../img/work1.jpg);
+  /*background-image: url(../img/work1.jpg);*/
   background-size: 100% auto;
 }
 
@@ -165,7 +167,7 @@ section {overflow: hidden;}
 }
 
 .cardContainer:nth-child(2) .card .front {
-  background-image: url(../img/work2.jpg);
+  /*background-image: url(../img/work2.jpg);*/
   background-size: 100% auto;
 }
 .cardContainer:nth-child(2) .card .back {
@@ -173,7 +175,7 @@ section {overflow: hidden;}
 }
 
 .cardContainer:nth-child(3) .card .front {
-  background-image: url(../img/work3.jpg);
+ /* background-image: url(../img/work3.jpg);*/
   background-size: 100% auto;
 }
 .cardContainer:nth-child(3) .card .back {
@@ -181,7 +183,7 @@ section {overflow: hidden;}
 }
 
 .cardContainer:nth-child(4) .card .front {
-  background-image: url(../img/work4.jpg);
+ /* background-image: url(../img/work4.jpg);*/
   background-size: 100% auto;
 }
 .cardContainer:nth-child(4) .card .back 
