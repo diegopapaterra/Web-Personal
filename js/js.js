@@ -1,3 +1,4 @@
+console.info("Welcome to my WEB!");
 var altoNav = $(window).height();
 $("body>section").css("min-height", altoNav);
 $(window).scroll(ajustarSeccion);

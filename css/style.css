@@ -3,33 +3,42 @@ body{margin:0; padding:0; position: relative; font-family: 'Open Sans', sans-ser
 h1, h2{margin: 0; padding: 0;}
 
 /*Header*/
-header.large {height: 100px; background: rgb(120, 144, 156); padding: 30px 0;}
-header.small {height: 60px; background: rgba(255, 255, 255, 0.5); padding: 15px 0;}
+header.large {height: 100px; background: transparent; padding: 30px 0; border-bottom: 1px solid rgba(255,255,255,0.25);}
+header.small {height: 60px; background: rgba(0, 0, 0, 0.1); padding: 15px 0; border-bottom: 1px solid rgba(255,255,255,0.25);}
 header{transition: .7s all; -moz-transition: .7s all; -webkit-transition: .7s all; -o-transition: .7s all;}
 header{position:fixed; top: 0; right: 0; left:0; margin: auto; width: 100%; z-index: 1000;}
 header .main-navbar{text-align: center;}
 header li{display: block; list-style-type: none; margin: 5px 0; text-align: center;}
 header li a{background-color: #222222; color: #ccc; text-decoration: none; padding: 3px 5px; cursor: pointer; font-size: 16px; border: solid 2px #222222;}
 header li a:hover{text-decoration: none; color: #EEE;}
-header li .activo{border: solid 2px #EEFF41; color: #EEFF41 !important;}
+header li .activo{border: solid 2px #B71C1C; color: #B71C1C !important;}
 section {overflow: hidden; padding-top: 90px;}
+.blinking-cursor{color:#CCC; -webkit-animation: 1s blink step-end infinite; -moz-animation: 1s blink step-end infinite; -ms-animation: 1s blink step-end infinite; -o-animation: 1s blink step-end infinite; animation: 1s blink step-end infinite;}
+@keyframes blink{from,to{color:transparent}50%{color:#CCC}}@-moz-keyframes blink{from,to{color:transparent}50%{color:#CCC}}@-webkit-keyframes blink{from,to{color:transparent}50%{color:#CCC}}@-ms-keyframes blink{from,to{color:transparent}50%{color:#CCC}}@-o-keyframes blink{from,to{color:transparent}50%{color:#CCC}}
 
 @media (min-width:768px){
     header li{display: inline-block; list-style-type: none; margin: 5px 0; text-align: center;}
     header li a{background-color: #222222; color: #ccc; text-decoration: none; padding: 3px 5px; cursor: pointer; font-size: 16px; border: solid 2px #222222;}
     header li a:hover{text-decoration: none; color: #EEE;}
-    header li .activo{border: solid 2px #EEFF41; color: #EEFF41 !important;}
+    header li .activo{border: solid 2px #B71C1C; color: #B71C1C !important;}
 }
 
 
-#section1{border-bottom: 1px solid #cccccc; background-color: #222222; background-image: url("../img/Background.jpg"); background-repeat: no-repeat; background-position-x: 50%; background-position-y: 50%; background-position: center center;}
+#section1{background-color: #222222; background-image: url("../img/Background.jpg"); background-repeat: no-repeat; background-position-x: 50%; background-position-y: 50%; background-position: center center; background-attachment: fixed;}
 #section1>div{text-align: center;}
 #section1 h1{font-size: 70px; line-height: 1.4; color: #FFFFFF; padding-top: 20%; font-family: 'Open Sans', sans-serif; font-weight: 100;}
-#section1 h2{font-size: 60px; line-height: 1; color: #FFFFFF; width: 50%; display: block; margin: auto; font-family: 'Open Sans', sans-serif; font-weight: 100;}
+#section1 h2{font-size: 60px; line-height: 1; color: #FFFFFF; display: block; margin: auto; font-family: 'Open Sans', sans-serif; font-weight: 100;}
 #section1 h2 span{font-family: 'Open Sans', sans-serif; font-weight: 100;}
+#section1 h2>span{color:#B71C1C;}
 
-
-#section2{background-color: #2196F3; color: #1b1464;}
+#section2{background: rgba(34,34,34,1);
+    background: -moz-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(197,201,204,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,34,34,1)), color-stop(100%, rgba(197,201,204,1)));
+    background: -webkit-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(197,201,204,1) 100%);
+    background: -o-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(197,201,204,1) 100%);
+    background: -ms-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(197,201,204,1) 100%);
+    background: linear-gradient(to bottom, rgba(34,34,34,1) 0%, rgba(197,201,204,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#c5c9cc', GradientType=0 ); color: #222;}
 #section2 h3, #section3 h3, #section4 h3{text-align: center; padding: 40px 0;}
 #section2 p{line-height: 2; padding-right: 50px;}
 #section2 .row>h3>span{color: #B71C1C;}
@@ -39,8 +48,16 @@ section {overflow: hidden; padding-top: 90px;}
 .underline{color: #B71C1C;}
 
 
-#section3{background-color: #CDDC39;}
+#section3{background-color: #c5c9cc;}
 
+#section4{background: rgba(197,201,204,1);
+    background: -moz-linear-gradient(top, rgba(197,201,204,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(197,201,204,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(197,201,204,1) 0%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(197,201,204,1) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(197,201,204,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(197,201,204,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5c9cc', endColorstr='#ffffff', GradientType=0 );}
 #section4 #SolarApp{background: #222222; opacity: 0.8;}
 #section4 .modal-header{border: none; text-align: center; color: white;}
 #section4 .SolarApp{background: transparent; border: none; box-shadow: none;}
