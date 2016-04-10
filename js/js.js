@@ -62,9 +62,9 @@ function cambiarSeccion(){
 $(document).on("scroll", function() {
 
     if($(document).scrollTop()>20) {
-        $("header").removeClass("large").addClass("small");
+        $("header").removeClass("largeNav").addClass("smallNav");
     } else {
-        $("header").removeClass("small").addClass("large");
+        $("header").removeClass("smallNav").addClass("largeNav");
     }
 
 });
