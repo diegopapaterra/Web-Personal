@@ -6,5 +6,5 @@ $txt = "El siguiente mensaje es enviado a traves del formulario de contacto de w
 $headers = $_POST['nombre']." ".$_POST['email'];
 
 mail($to,$subject,$txt,$headers);
-header('location:index.html?msgEnviado=true');
+header('location:../index.html?msgEnviado=true');
 ?>
