@@ -38,14 +38,7 @@ section {overflow: hidden; padding-top: 90px;}
 #section1 h2 span{font-family: 'Open Sans', sans-serif; font-weight: 100;}
 #section1 h2>span{color:#B71C1C;}
 
-#section2{background: rgba(34,34,34,1);
-    background: -moz-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(197,201,204,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,34,34,1)), color-stop(100%, rgba(197,201,204,1)));
-    background: -webkit-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(197,201,204,1) 100%);
-    background: -o-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(197,201,204,1) 100%);
-    background: -ms-linear-gradient(top, rgba(34,34,34,1) 0%, rgba(197,201,204,1) 100%);
-    background: linear-gradient(to bottom, rgba(34,34,34,1) 0%, rgba(197,201,204,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#222222', endColorstr='#c5c9cc', GradientType=0 ); color: #222;}
+#section2{background: url(../img/back_about.jpg) repeat left top;color: #222;}
 #section2 h3, #section3 h3, #section4 h3, #section5 h3{text-align: center; padding: 40px 0; font-family: 'Josefin Slab', serif; font-weight: bold;}
 #section2 p{line-height: 2; padding-right: 50px;}
 #section2 blockquote{font-family: 'Lustria', serif; line-height: 1.6;}
@@ -56,19 +49,13 @@ section {overflow: hidden; padding-top: 90px;}
 .underline{color: #B71C1C;}
 
 
-#section3{background-color: #c5c9cc;}
+#section3{background: url(../img/back_experience.jpg) repeat left top;}
+#section3 h3{color:white;}
 #section3 .cd-timeline-content h2{font-family: 'Open Sans', sans-serif; font-size: 15px;}
 #section3 .cd-timeline-content p{font-family: 'Lustria', serif; line-height: 1.6; font-size: 12px;}
 #section3 .cd-timeline-content{box-shadow: 0 3px 0 #B71C1C;}
 
-#section4{background: rgba(197,201,204,1);
-    background: -moz-linear-gradient(top, rgba(197,201,204,1) 0%, rgba(255,255,255,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(197,201,204,1)), color-stop(100%, rgba(255,255,255,1)));
-    background: -webkit-linear-gradient(top, rgba(197,201,204,1) 0%, rgba(255,255,255,1) 100%);
-    background: -o-linear-gradient(top, rgba(197,201,204,1) 0%, rgba(255,255,255,1) 100%);
-    background: -ms-linear-gradient(top, rgba(197,201,204,1) 0%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(to bottom, rgba(197,201,204,1) 0%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5c9cc', endColorstr='#ffffff', GradientType=0 );}
+#section4{background: url(../img/back_works.jpg) repeat left top;}
 #section4 #SolarApp{background: #222222; opacity: 0.8;}
 #section4 .modal-header{border: none; text-align: center; color: white;}
 #section4 .SolarApp{background: transparent; border: none; box-shadow: none;}
