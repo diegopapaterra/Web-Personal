@@ -1,4 +1,4 @@
-console.info("Welcome to my WEB!");
+console.info("Welcome to my WEB! Thanks for check the code :)");
 var altoNav = $(window).height();
 $("body>section").css("min-height", altoNav);
 $(window).scroll(ajustarSeccion);
@@ -9,23 +9,23 @@ $('.card').click(function(){
 
 function ajustarSeccion(){
 
-    var scrollActual = $("body").scrollTop();
+    var scrollActual = parseInt($("body").scrollTop());
     
     $("a").removeClass("activo");
     
-    if(scrollActual >= $("#section5").offset().top){
+    if(scrollActual >= parseInt($("#section5").offset().top)){
 
         $("#v5").addClass("activo");
 
-    }else if(scrollActual >= $("#section4").offset().top){
+    }else if(scrollActual >= parseInt($("#section4").offset().top)){
 
         $("#v4").addClass("activo");
 
-    }else if(scrollActual >= $("#section3").offset().top){
+    }else if(scrollActual >= parseInt($("#section3").offset().top)){
 
         $("#v3").addClass("activo");
 
-    }else if(scrollActual >= $("#section2").offset().top){
+    }else if(scrollActual >= parseInt($("#section2").offset().top)){
 
         $("#v2").addClass("activo");
 
