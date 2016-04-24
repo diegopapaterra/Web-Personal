@@ -47,6 +47,21 @@ section {overflow: hidden; padding-top: 90px;}
 #section2 #myCarousel h4{text-align: center; font-weight: bolder; font-style: italic; color: #222;}
 #section2 .carousel-control{background: transparent !important;}
 .underline{color: #B71C1C;}
+#section2 .container-draggable{max-width: 600px; display: block; margin: 0 auto 20px auto; min-height: 300px; background: rgba(0,0,0,0.8); border-radius: 3px; background-image: url("../img/BackDrag.png"); background-position: center center; background-repeat: no-repeat; overflow: hidden; position: relative;}
+#section2 .container-draggable img.draggable{cursor: move;}
+#section2 .container-draggable img.photoshop{position: absolute; top: 5%; left: 5%; width: 80px;}
+#section2 .container-draggable img.illustrator{position: absolute; top: 40%; left: 1%; width: 35px;}
+#section2 .container-draggable img.flash{position: absolute; top: 50%; left: 15%; width: 35px;}
+#section2 .container-draggable img.responsive{position: absolute; top: 50%; left: 30%; width: 50px;}
+#section2 .container-draggable img.phonegap{position: absolute; top:85%; left: 10%; width: 50px;}
+#section2 .container-draggable img.html5{position: absolute; top: 5%; right: 5%; width: 70px;}
+#section2 .container-draggable img.css3{position: absolute; top: 40%; right: 1%; width: 50px;}
+#section2 .container-draggable img.javascript{position: absolute; top: 45%; right: 20%; width: 50px;}
+#section2 .container-draggable img.backbone{position: absolute; top: 20%; right: 20%; width: 30px;}
+#section2 .container-draggable img.git{position: absolute; bottom: 5%; left: 35%; width: 70px;}
+#section2 .container-draggable img.php{position: absolute; bottom: 20%; right: 1%; width: 50px;}
+#section2 .container-draggable img.mysql{position: absolute; bottom: 0; right: 5%; width: 50px;}
+#section2 .container-draggable img.csharp{position: absolute; bottom: 20%; right: 20%; width: 30px;}
 
 
 #section3{background: url(../img/back_experience.jpg) repeat left top;}

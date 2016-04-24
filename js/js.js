@@ -6,6 +6,7 @@ $("header li a").click(cambiarSeccion);
 $('.card').click(function(){
     $(this).toggleClass('flipped');
 });
+$( ".draggable" ).draggable();
 
 function ajustarSeccion(){
 
