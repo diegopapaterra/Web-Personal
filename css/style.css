@@ -63,7 +63,12 @@ section {overflow: hidden; padding-top: 90px;}
 #section2 .container-draggable img.mysql{position: absolute; bottom: 0; right: 5%; width: 50px;}
 #section2 .container-draggable img.csharp{position: absolute; bottom: 20%; right: 20%; width: 30px;}
 #section2 .fa{color: #B71C1C;}
-
+#section2 .container-skills-list{font-family: 'Lustria', serif; font-size: 18px; font-weight: bolder;}
+#section2 .container-skills-list ul li{margin: 10px 0;}
+#section2 .container-skills-list ul li span{position: relative;}
+#section2 .container-skills-list ul li span:after{content:"";position:absolute;width:calc(100% + 10px);height:2px;background-color:#B71C1C;left:-5px;top:calc(100% - 2px);transition:all .3s ease;}
+#section2 .container-skills-list ul li span:hover{cursor:pointer;}
+#section2 .container-skills-list ul li span:hover:after{top:calc(50% - 2px);}
 
 #section3{background: url(../img/back_experience.jpg) repeat left top;}
 #section3 h3{color:white;}
@@ -159,6 +164,7 @@ section {overflow: hidden; padding-top: 90px;}
     font-family: 'Open Sans', sans-serif !important;
     font-weight: normal !important;
 }
+.cardTitle small{font-size: 13px; color: #FFF;}
 .card .content>a{display: block; text-align: center;}
 .card .content>a>i{font-size: 30px; color: white;}
 
@@ -260,7 +266,7 @@ section {overflow: hidden; padding-top: 90px;}
 }
 .cardContainer:nth-child(5) .card .back
 {
-    background: #AD103C;
+    background: #27ae60;
 }
 
 .cardContainer:nth-child(6) .card .front {
@@ -284,7 +290,7 @@ section {overflow: hidden; padding-top: 90px;}
 }
 .cardContainer:nth-child(7) .card .back
 {
-    background: #AD103C;
+    background: #2aa9e0;
 }
 
 .cardContainer:nth-child(8) .card .front {
@@ -296,7 +302,7 @@ section {overflow: hidden; padding-top: 90px;}
 }
 .cardContainer:nth-child(8) .card .back
 {
-    background: #AD103C;
+    background: #f39c12;
 }
 
 .cardContainer:nth-child(9) .card .front {
@@ -306,9 +312,21 @@ section {overflow: hidden; padding-top: 90px;}
     repeat: no-repeat;
     transition: all .3s ease-in-out
 }
-.cardContainer:nth-child(9) .card .back
+.cardContainer:nth-child(10) .card .back
 {
     background: #AD103C;
+}
+
+.cardContainer:nth-child(10) .card .front {
+    background-image: url(../img/work10.jpg);
+    background-size: 100% auto;
+    background-position: center center;
+    repeat: no-repeat;
+    transition: all .3s ease-in-out
+}
+.cardContainer:nth-child(10) .card .back
+{
+    background: #27ae60;
 }
 
 .cardContainer:first-child .card .front:hover, .cardContainer:nth-child(2) .card .front:hover, .cardContainer:nth-child(3) .card .front:hover, .cardContainer:nth-child(4) .card .front:hover, .cardContainer:nth-child(5) .card .front:hover, .cardContainer:nth-child(6) .card .front:hover, .cardContainer:nth-child(7) .card .front:hover, .cardContainer:nth-child(8) .card .front:hover, .cardContainer:nth-child(9) .card .front:hover{
