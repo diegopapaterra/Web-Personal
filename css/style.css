@@ -66,7 +66,7 @@ section {overflow: hidden; padding-top: 90px;}
 #section2 .container-skills-list{font-family: 'Lustria', serif; font-size: 18px; font-weight: bolder;}
 #section2 .container-skills-list ul li{margin: 10px 0;}
 #section2 .container-skills-list ul li span{position: relative;}
-#section2 .container-skills-list ul li span:after{content:"";position:absolute;width:calc(100% + 10px);height:2px;background-color:#B71C1C;left:-5px;top:calc(100% - 2px);transition:all .3s ease;}
+#section2 .container-skills-list ul li span:after{content:"";position:absolute;width:calc(100% + 10px);height:1px;background-color:#B71C1C;left:-5px;top:calc(100% - 2px);transition:all .3s ease;}
 #section2 .container-skills-list ul li span:hover{cursor:pointer;}
 #section2 .container-skills-list ul li span:hover:after{top:calc(50% - 2px);}
 
