@@ -76,6 +76,7 @@ section {overflow: hidden; padding-top: 90px;}
 #section3 .cd-timeline-content p{font-family: 'Lustria', serif; line-height: 1.6; font-size: 12px;}
 #section3 .cd-timeline-content{box-shadow: 0 3px 0 #B71C1C;}
 #section3 .cd-container{overflow: visible;}
+#section3 .cd-date{color: #FFFFFF;}
 
 #section4{background: url(../img/back_works.jpg) repeat left top;}
 #section4 #SolarApp{background: rgba(34,34,34,0.8);}
@@ -329,7 +330,7 @@ section {overflow: hidden; padding-top: 90px;}
     background: #27ae60;
 }
 
-.cardContainer:first-child .card .front:hover, .cardContainer:nth-child(2) .card .front:hover, .cardContainer:nth-child(3) .card .front:hover, .cardContainer:nth-child(4) .card .front:hover, .cardContainer:nth-child(5) .card .front:hover, .cardContainer:nth-child(6) .card .front:hover, .cardContainer:nth-child(7) .card .front:hover, .cardContainer:nth-child(8) .card .front:hover, .cardContainer:nth-child(9) .card .front:hover{
+.cardContainer:first-child .card .front:hover, .cardContainer:nth-child(2) .card .front:hover, .cardContainer:nth-child(3) .card .front:hover, .cardContainer:nth-child(4) .card .front:hover, .cardContainer:nth-child(5) .card .front:hover, .cardContainer:nth-child(6) .card .front:hover, .cardContainer:nth-child(7) .card .front:hover, .cardContainer:nth-child(8) .card .front:hover, .cardContainer:nth-child(9) .card .front:hover, .cardContainer:nth-child(10) .card .front:hover{
     background-size: 110% auto;
 }
 
