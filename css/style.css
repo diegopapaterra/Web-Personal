@@ -41,7 +41,11 @@ section {overflow: hidden; padding-top: 90px;}
 #section2{background: url(../img/back_about.jpg) repeat left top;color: #222;}
 #section2 h3, #section3 h3, #section4 h3, #section5 h3{text-align: center; padding: 40px 0; font-family: 'Josefin Slab', serif; font-weight: bold;}
 #section2 p{line-height: 2; padding-right: 50px;}
-#section2 blockquote{font-family: 'Lustria', serif; line-height: 1.6;}
+#section2 blockquote,
+#section2 blockquote a,
+#section2 blockquote a:hover,
+#section2 blockquote a:visited,
+#section2 blockquote a:link{font-family: 'Lustria', serif; line-height: 1.6; color: #666; text-decoration: none; background: white; margin: 0;}
 #section2 .row>h3>span{color: #B71C1C;}
 #section2 #myCarousel{max-width: 350px; display: block;margin: auto; margin-bottom: 20px;}
 #section2 #myCarousel h4{text-align: center; font-weight: bolder; font-style: italic; color: #222;}
@@ -101,7 +105,11 @@ section {overflow: hidden; padding-top: 90px;}
 #section5 button[type="submit"].button--inverted:hover::before { background-color: #fff;}
 #section5 .social{display: block; margin: 40px auto;}
 #section5 .social>div{text-align: center;}
-#section5 .social>div>a>i{color: white; font-size: 60px; padding: 20px 0;}
+#section5 .social>div>a>i{color: white; font-size: 60px; padding: 20px 0;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;}
 #section5 .social>div>a>i:hover{color:#B71C1C;}
 #section5 .row>h3>span{color: #B71C1C;}
 
