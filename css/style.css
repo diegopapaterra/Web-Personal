@@ -92,6 +92,7 @@ section {overflow: hidden; padding-top: 90px;}
 #section4 #NikeFlash .modal-dialog{width: 1050px; height: 768px;}
 #section4 .NikeFlash iframe{width:1020px; height: 768px;}
 #section4 .fa.fa-external-link{display: block; text-align: center;}
+#section4 .faltaUnoHide{display: none !important;}
 
 #section5{background: url(../img/back_contact.jpg) repeat left top;}
 #section5 h3{color: white;}
